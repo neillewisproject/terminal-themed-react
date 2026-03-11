@@ -1,0 +1,379 @@
+:root {
+  color-scheme: dark;
+  --bg-0: #06090d;
+  --bg-1: #0d1117;
+  --bg-2: #111927;
+  --line: #1f2938;
+  --muted: #8ba0b7;
+  --text: #d8e3f0;
+  --green: #5ef29a;
+  --green-strong: #25c776;
+  --blue: #61afef;
+  --error: #ff6c7a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "JetBrains Mono", "Fira Code", Consolas, "Courier New", monospace;
+  background:
+    radial-gradient(circle at 0 0, #182133 0%, transparent 45%),
+    radial-gradient(circle at 100% 100%, #132022 0%, transparent 45%),
+    linear-gradient(145deg, var(--bg-0), var(--bg-1));
+  color: var(--text);
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terminal-window {
+  width: min(85vw, 100%);
+  height: min(85vh, 900px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #203148;
+  border-radius: 14px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #0f1623 0%, #0b1018 100%);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #203148;
+  background: linear-gradient(180deg, #141d2b, #121927);
+}
+
+.window-controls {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.window-dot {
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.window-dot.red {
+  background: #ff5f56;
+}
+
+.window-dot.yellow {
+  background: #ffbd2e;
+}
+
+.window-dot.green {
+  background: #27c93f;
+}
+
+.terminal-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.header-icons {
+  display: flex;
+  gap: 0.75rem;
+  color: #6a7f96;
+}
+
+.terminal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem 1.1rem 1.3rem;
+  scrollbar-width: thin;
+  scrollbar-color: #33455e #111824;
+}
+
+.terminal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+  background: #111824;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+  background: #33455e;
+  border-radius: 999px;
+}
+
+.history-row {
+  margin-bottom: 0.2rem;
+}
+
+.command-row,
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.command-text {
+  color: var(--text);
+}
+
+.output-row {
+  margin-left: 0;
+  color: var(--text);
+}
+
+.prompt {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  flex-shrink: 0;
+}
+
+.prompt-user {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.prompt-host {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.prompt-path {
+  color: #d994ff;
+  font-weight: 700;
+}
+
+.prompt-divider {
+  color: #7f8fa3;
+}
+
+.input-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.terminal-input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  border: 0;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  caret-color: var(--green-strong);
+}
+
+.input-ghost {
+  opacity: 0;
+  min-height: 1.3rem;
+  display: block;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  padding-right: 1.3rem;
+}
+
+.ascii-art {
+  margin: 0 0 0.8rem;
+  color: var(--green);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.line-muted {
+  color: #d2dde8;
+}
+
+.line-faint {
+  color: var(--muted);
+}
+
+.line-highlight {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.line-error {
+  color: var(--error);
+}
+
+.help-grid {
+  margin: 0.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.3rem 0.9rem;
+}
+
+.help-row {
+  display: flex;
+}
+
+.help-command {
+  width: 6rem;
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+.help-description {
+  color: var(--muted);
+}
+
+.stacked-copy {
+  margin: 0.55rem 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.stacked-copy p {
+  margin: 0;
+  color: #d2dde8;
+}
+
+.stacked-copy ul {
+  margin: 0.45rem 0 0;
+  padding-left: 1.15rem;
+  color: var(--muted);
+}
+
+.stacked-copy li + li {
+  margin-top: 0.35rem;
+}
+
+.experience-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.skills-output {
+  margin: 0.5rem 0;
+}
+
+.skills-output pre {
+  margin: 0.35rem 0 0;
+  color: #95cbff;
+}
+
+.projects-list {
+  margin: 0.75rem 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.project-card {
+  border: 1px solid #22324a;
+  border-radius: 10px;
+  background: linear-gradient(160deg, #0f1725, #101828);
+  padding: 0.85rem;
+}
+
+.project-card h3 {
+  margin: 0;
+  color: var(--green);
+  font-size: 1rem;
+}
+
+.project-card p {
+  margin: 0.65rem 0;
+  color: #d2dde8;
+}
+
+.project-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.project-head a {
+  color: var(--muted);
+}
+
+.project-head a:hover {
+  color: #d5e4f4;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tech-badge {
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid #2d4662;
+  background: #122236;
+  color: #91c9ff;
+  font-size: 0.74rem;
+}
+
+.contact-list {
+  margin: 0.65rem 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--muted);
+}
+
+.contact-row a {
+  color: #8ac3ff;
+  text-decoration: none;
+}
+
+.contact-row a:hover {
+  text-decoration: underline;
+}
+
+.scroll-anchor {
+  height: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    padding: 0.5rem;
+  }
+
+  .terminal-window {
+    height: 92vh;
+    border-radius: 10px;
+  }
+
+  .terminal-body {
+    padding: 0.8rem;
+    font-size: 0.92rem;
+  }
+
+  .ascii-art {
+    display: none;
+  }
+}
