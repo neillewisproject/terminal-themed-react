@@ -134,6 +134,84 @@ export const resumeData = {
     'Contributed to R&D Day stall, achieving first place (2023).',
     'Delivered multiple technical presentations on Infrastructure-as-Code (Terraform).',
     'Authored an AI/ML research paper for Schneider Electric, recognized by ETAP management.'
+  ],
+
+  hobbies: [
+    {
+      icon: '📸',
+      name: 'Photography',
+      description: 'Capturing architecture, street scenes, and landscapes. Particularly fond of long-exposure night photography and urban geometry.'
+    },
+    {
+      icon: '🎮',
+      name: 'Gaming',
+      description: 'Strategy and FPS titles — Valorant, Civilization VI, and the occasional indie gem. Avid esports follower.'
+    },
+    {
+      icon: '🎵',
+      name: 'Music',
+      description: 'Deep appreciation for electronic, progressive rock, and film scores. Occasional beat-making sessions in Ableton Live.'
+    },
+    {
+      icon: '📚',
+      name: 'Reading',
+      description: 'Tech books, sci-fi novels, and engineering blogs. Currently reading "Designing Data-Intensive Applications" by Martin Kleppmann.'
+    },
+    {
+      icon: '🏋️',
+      name: 'Fitness',
+      description: 'Consistent gym training and calisthenics. Completed a half-marathon in 2024 and aiming for a full one next year.'
+    },
+    {
+      icon: '🛠️',
+      name: 'Side Projects',
+      description: 'Building personal tools, experimenting with LLMs and generative AI, and occasionally contributing to open source.'
+    }
+  ],
+
+  albums: [
+    {
+      title: 'The Dark Side of the Moon',
+      artist: 'Pink Floyd',
+      year: '1973',
+      genre: 'Progressive Rock',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png'
+    },
+    {
+      title: 'Random Access Memories',
+      artist: 'Daft Punk',
+      year: '2013',
+      genre: 'Electronic',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/a/a1/Random_Access_Memories.jpg'
+    },
+    {
+      title: 'DAMN.',
+      artist: 'Kendrick Lamar',
+      year: '2017',
+      genre: 'Hip-Hop',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/5/51/Kendrick_Lamar_-_Damn.png'
+    },
+    {
+      title: 'OK Computer',
+      artist: 'Radiohead',
+      year: '1997',
+      genre: 'Alternative Rock',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png'
+    },
+    {
+      title: 'After Hours',
+      artist: 'The Weeknd',
+      year: '2020',
+      genre: 'R&B / Pop',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png'
+    },
+    {
+      title: 'Blonde',
+      artist: 'Frank Ocean',
+      year: '2016',
+      genre: 'R&B / Soul',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/a/a0/Blonde_-_Frank_Ocean.jpeg'
+    }
   ]
 };
 
