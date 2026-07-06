@@ -171,25 +171,25 @@ export const resumeData = {
 
   albums: [
     {
-      title: 'The Dark Side of the Moon',
-      artist: 'Pink Floyd',
-      year: '1973',
-      genre: 'Progressive Rock',
-      cover: 'https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png'
+      title: 'Vespertine',
+      artist: 'Björk',
+      year: '2001',
+      genre: 'Art Pop / Folktronica',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/1/14/Bj%C3%B6rk_-_Vespertine_album_cover.png'
     },
     {
-      title: 'Random Access Memories',
-      artist: 'Daft Punk',
-      year: '2013',
-      genre: 'Electronic',
-      cover: 'https://upload.wikimedia.org/wikipedia/en/a/a1/Random_Access_Memories.jpg'
+      title: 'Blue',
+      artist: 'Joni Mitchell',
+      year: '1971',
+      genre: 'Folk Rock',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/e/e1/Bluealbumcover.jpg'
     },
     {
-      title: 'DAMN.',
+      title: 'To Pimp a Butterfly',
       artist: 'Kendrick Lamar',
-      year: '2017',
+      year: '2015',
       genre: 'Hip-Hop',
-      cover: 'https://upload.wikimedia.org/wikipedia/en/5/51/Kendrick_Lamar_-_Damn.png'
+      cover: 'https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png'
     },
     {
       title: 'OK Computer',
@@ -199,11 +199,11 @@ export const resumeData = {
       cover: 'https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png'
     },
     {
-      title: 'After Hours',
-      artist: 'The Weeknd',
-      year: '2020',
-      genre: 'R&B / Pop',
-      cover: 'https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png'
+      title: 'Imaginal Disk',
+      artist: 'Magdalena Bay',
+      year: '2024',
+      genre: 'Synth Pop / Electronic Rock',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/4/4b/Magdalena_Bay_-_Imaginal_Disk.png'
     },
     {
       title: 'Blonde',
