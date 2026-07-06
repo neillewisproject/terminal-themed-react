@@ -192,11 +192,11 @@ export const resumeData = {
       cover: 'https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png'
     },
     {
-      title: 'OK Computer',
+      title: 'In Rainbows',
       artist: 'Radiohead',
-      year: '1997',
+      year: '2007',
       genre: 'Alternative Rock',
-      cover: 'https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png'
+      cover: 'https://upload.wikimedia.org/wikipedia/en/1/14/Inrainbowscover.png'
     },
     {
       title: 'Imaginal Disk',
@@ -206,11 +206,11 @@ export const resumeData = {
       cover: 'https://upload.wikimedia.org/wikipedia/en/4/4b/Magdalena_Bay_-_Imaginal_Disk.png'
     },
     {
-      title: 'Blonde',
-      artist: 'Frank Ocean',
-      year: '2016',
-      genre: 'R&B / Soul',
-      cover: 'https://upload.wikimedia.org/wikipedia/en/a/a0/Blonde_-_Frank_Ocean.jpeg'
+      title: 'Madvillainy',
+      artist: 'Madvillain',
+      year: '2004',
+      genre: 'Alternative Hip-Hop',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/5/5e/Madvillainy_cover.png'
     }
   ]
 };
